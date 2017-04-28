@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+
+<html >
+
+
+    <head>
+        <meta charset="utf-8" />
+        <title>test</title>
+<style>
+body{background-color:#999;}
+.div1
+{
+position: relative;
+width: 200px;
+margin: auto;
+margin-top:50px;
+perspective:350;
+-webkit-perspective:350; /* Safari and Chrome */
+}
+
+.div2
+{
+position: absolute;
+width:200px;
+top: 100px;
+transform: rotateX(0deg); /* Safari and Chrome */
+-webkit-transform: rotateX(0deg); /* Safari and Chrome */
+animation:myfirst 5s infinite; /* Safari and Chrome */
+-webkit-animation:myfirst 5s infinite; /* Safari and Chrome */
+}
+
+@keyframes myfirst
+{
+0%   {top:100px;-webkit-transform: rotateX(0deg) scale(1,1);}
+25%  {top:100px;-webkit-transform: rotateX(95deg) scale(.8,.8);}
+50%  {top:120px;-webkit-transform: rotateX(95deg) scale(.8,.8);}
+75%  {top:100px;-webkit-transform: rotateX(95deg) scale(.8,.8);}
+100% {}
+}
+
+@-webkit-keyframes myfirst
+{
+0%   {top:100px;-webkit-transform: rotateX(0deg) scale(1,1);}
+25%  {top:100px;-webkit-transform: rotateX(95deg) scale(.8,.8);}
+50%  {top:120px;-webkit-transform: rotateX(95deg) scale(.8,.8);}
+75%  {top:100px;-webkit-transform: rotateX(95deg) scale(.8,.8);}
+100% {}
+}
+
+</style>
+	</head>
+
+    <body>
+
+	<div class="div1">
+		<img class="div2" src="BankCardDemo.png"/>
+	</div>
+    </body>
+
+</html>
